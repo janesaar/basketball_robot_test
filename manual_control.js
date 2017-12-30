@@ -111,6 +111,9 @@ controller.on('data', (data) => {
         if (state === states.IDLE) {
             state = states.GRAB_BALL;
         }
+        else if (state === states.GRAB_BALL) {
+            state = states.IDLE;
+        }
         else if (state === states.HOLD_BALL) {
             state = states.EJECT_BALL;
             startTimeEject = Date.now();
