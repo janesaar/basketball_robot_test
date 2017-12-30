@@ -269,7 +269,7 @@ speedSendInterval = setInterval(() => {
     if (state === states.EJECT_BALL) {
         let currentTime = Date.now();
         let timeDiff = currentTime - startTimeEject;
-        let speed = 200 - timeDiff * 0.235;
+        let speed = 200 - timeDiff * 0.2;
 
         if (speed < 10){
             speed = 10;
