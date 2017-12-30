@@ -135,7 +135,7 @@ controller.on('data', (data) => {
     xSpeed = data.mouse.x / 32768 * maxSpeed;
     ySpeed = data.mouse.y / 32768 * maxSpeed;
 
-    rotation = data.joystick.x / 32768 * maxRotation;
+    rotation = -data.joystick.x / 32768 * maxRotation;
 
     //console.log(data);
 });
