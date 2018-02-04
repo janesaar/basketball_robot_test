@@ -132,10 +132,10 @@ controller.on('data', (data) => {
 
     prevButtons = clone(data.button);
 
-    xSpeed = data.mouse.x / 32768 * maxSpeed;
-    ySpeed = data.mouse.y / 32768 * maxSpeed;
+    xSpeed = data.joystick.x / 32768 * maxSpeed;
+    ySpeed = data.joystick.y / 32768 * maxSpeed;
 
-    rotation = -data.joystick.x / 32768 * maxRotation;
+    rotation = -data.mouse.x / 32768 * maxRotation;
 
     //console.log(data);
 });
